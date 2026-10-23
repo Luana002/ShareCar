@@ -33,10 +33,12 @@ Projeto acadêmico em dupla: **ShareCar**, um marketplace **peer-to-peer de alug
 | Definição descritiva das 10 primeiras telas | ✅ `10-telas-mvp.md` |
 | Protótipo visual em HTML/CSS das 10 telas | ✅ `prototipo/` |
 | Validação de renderização (Chrome headless) | ✅ |
-| Repositório Git / README raiz | ❌ ainda não iniciado |
+| Repositório Git inicializado + `.gitignore` (commit `e2d6fee`) | ✅ 21/10/2026 |
+| README raiz | ❌ ainda não iniciado |
 | Projeto Django / PostgreSQL / API | ❌ ainda não iniciado |
 
 **Ainda não existe código de backend.** O protótipo é somente visual, com dados fictícios.
+**PostgreSQL ficou adiado por decisão da dupla:** por enquanto o projeto não usa banco; a configuração do Postgres entra quando o Django for criado.
 
 ---
 
@@ -83,12 +85,23 @@ Desvios: `recusada` (gera estorno), `cancelada`, `estornada`.
 - Moldura do celular usa `overflow: clip` no desktop para arredondar as bordas sem quebrar o `position: sticky`.
 - Screenshots com Chrome headless precisam de `--virtual-time-budget=8000` para esperar a fonte de ícones carregar.
 
+### 3.6 Versionamento (definido em 21/10/2026)
+
+- Repositório inicializado na própria pasta `C:\Users\00022593\projeto`, branch `master`.
+- Identidade Git configurada **apenas no repositório** (não na máquina): `Luana002 / correaluana623@gmail.com`.
+- `core.autocrlf=true`: o histórico guarda **LF** e a pasta de trabalho recebe **CRLF** no Windows. Por isso **não** há `.gitattributes` de normalização.
+- `.gitignore` cobre Python/Django, `.env` (com exceção de `.env.example`), mídia, `staticfiles`, caches de teste, editores e arquivos de SO.
+- Arquivos versionados no primeiro commit: `AGENTS.md`, `projeto-sharecar.md`, `10-telas-mvp.md`, `.gitignore` e todo o `prototipo/`.
+- Ainda **sem** repositório remoto no GitHub; `README.md` raiz ficou para o próximo passo.
+
 ---
 
 ## 4. Estrutura de arquivos
 
 ```
 C:\Users\00022593\projeto\
+├── .git\                      # repositório local (branch master)
+├── .gitignore                 # Python/Django, .env, mídia, editores, SO
 ├── AGENTS.md                  # este arquivo (memória do projeto)
 ├── projeto-sharecar.md        # resumo completo do documento-fonte
 ├── 10-telas-mvp.md            # descrição das 10 telas
@@ -165,12 +178,13 @@ Requisitos não funcionais críticos: PWA instalável + offline (RNF01–02), pr
 
 ## 8. Próximos passos sugeridos
 
-1. `git init` + `README.md` raiz (Marco 1).
+1. `README.md` raiz com descrição, stack, como rodar o protótipo e divisão de tarefas (Marco 1) — o `git init` já foi feito.
 2. Criar `docs/prompts/` e salvar o primeiro prompt com nota do que mudou.
-3. Estrutura Django + Docker Compose + `.env.example` + PostgreSQL.
+3. Estrutura Django + Docker Compose + `.env.example` + PostgreSQL (o Postgres está adiado até aqui).
 4. Modelagem de usuários/perfis (usuário pode ser proprietário e locatário).
 5. Implementar veículos e disponibilidade; depois busca, reservas e pagamento.
 6. Testes das regras RN01–RN10 desde o início.
+7. Criar repositório remoto no GitHub e fazer o `git push`.
 
 ---
 
