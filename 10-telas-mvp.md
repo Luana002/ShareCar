@@ -50,14 +50,18 @@ O fechamento do ciclo. Liberada apenas **após o check-out** e **uma vez por par
 
 ---
 
-## Próximas telas (segunda leva)
+## Segunda leva (já implementada no protótipo)
 
 Com essas 10 telas o fluxo da demonstração final já fecha: login → busca → detalhes → reserva → pagamento → aceite do proprietário → check-in → check-out → avaliação, além do cadastro do carro.
 
-A segunda leva natural seria:
+As telas seguintes foram acrescentadas ao protótipo como **11–15**:
 
-- Perfil e verificação de documentos
-- Painel do proprietário com indicadores
-- Área administrativa (aprovações, comissão, bloqueios)
-- Página offline
-- Recuperação de senha
+| # | Tela | Cobre |
+|---|---|---|
+| 11 | Perfil e verificação de documentos | RF03, RF04, RNF05 — selos de documento e CNH, notas, atalhos da conta e saída |
+| 12 | Painel do proprietário | RF05, RF19 — faturamento, repasses com comissão de 15%, gráfico e status da frota |
+| 13 | Área administrativa | RF26–RF29 — aprovações, comissão configurável, reservas/pagamentos e bloqueios |
+| 14 | Recuperação de senha | RF02 — envio de link, prazo de expiração e orientações |
+| 15 | Estado offline | RNF01, RNF02 — telas em cache e fila de alterações pendentes do PWA |
+
+Todas as 15 telas existem em **duas versões**: mobile (`prototipo/`) e desktop (`prototipo/desktop/`). A descrição acima continua sendo a referência de conteúdo; a versão desktop apenas reorganiza o mesmo conteúdo em layout amplo (cabeçalho fixo, filtros laterais, tabelas e resumos fixos).

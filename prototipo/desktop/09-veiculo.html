@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Cadastro de veículo (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a href="07-reservas.html">Reservas</a>
+        <a class="is-active" href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> Buscar por cidade ou modelo</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="12-painel.html"><i class="bi bi-chevron-left"></i> Voltar ao painel</a>
+        <h1>Anunciar veículo</h1>
+        <p>Preencha os dados, o preço e a agenda. O anúncio vai para análise do administrador.</p>
+      </div>
+      <div class="dactions">
+        <span class="muted-sm">Etapa 2 de 4 · 50%</span>
+      </div>
+    </div>
+
+    <div class="card dpad" style="margin-bottom:18px">
+      <div class="stepper">
+        <span class="is-on"></span><span class="is-on"></span><span></span><span></span>
+      </div>
+      <div class="dspread" style="margin-top:10px">
+        <span class="muted-sm">1. Dados do veículo</span>
+        <span class="muted-sm">2. Preço, fotos e agenda</span>
+        <span class="muted-sm">3. Documentos</span>
+        <span class="muted-sm">4. Revisão</span>
+      </div>
+    </div>
+
+    <div class="dcols">
+      <div class="dstack">
+        <div class="card dpad">
+          <h3 class="dtitle">Dados do veículo</h3>
+          <div class="dgrid dgrid--2" style="align-items:start">
+            <div class="field">
+              <label for="modelo">Marca e modelo</label>
+              <div class="input">
+                <i class="bi bi-car-front"></i>
+                <input id="modelo" type="text" value="Chevrolet Onix LT 1.0">
+              </div>
+            </div>
+            <div class="field">
+              <label for="ano">Ano</label>
+              <div class="input"><input id="ano" type="text" value="2023"></div>
+            </div>
+            <div class="field">
+              <label for="categoria">Categoria</label>
+              <div class="input"><input id="categoria" type="text" value="Hatch"></div>
+            </div>
+            <div class="field">
+              <label for="cambio">Câmbio</label>
+              <div class="input"><input id="cambio" type="text" value="Automático"></div>
+            </div>
+            <div class="field">
+              <label for="combustivel">Combustível</label>
+              <div class="input"><input id="combustivel" type="text" value="Flex"></div>
+            </div>
+            <div class="field">
+              <label for="passageiros">Passageiros e portas</label>
+              <div class="grid-2">
+                <div class="input"><input id="passageiros" type="text" value="5" aria-label="Passageiros"></div>
+                <div class="input"><input id="portas" type="text" value="4" aria-label="Portas"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad">
+          <h3 class="dtitle">Preço e localização</h3>
+          <div class="dgrid dgrid--3" style="align-items:start">
+            <div class="field">
+              <label for="diaria">Valor da diária</label>
+              <div class="input input--money">
+                <span class="prefix">R$</span>
+                <input id="diaria" type="text" value="139">
+                <span class="suffix">/dia</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <div class="input">
+                <i class="bi bi-geo-alt"></i>
+                <input id="cidade" type="text" value="São Paulo, SP">
+              </div>
+            </div>
+            <div class="field">
+              <label for="bairro">Bairro</label>
+              <div class="input">
+                <i class="bi bi-pin-map"></i>
+                <input id="bairro" type="text" value="Moema">
+              </div>
+            </div>
+          </div>
+          <p class="hint" style="margin-top:12px"><i class="bi bi-info-circle"></i> A comissão da plataforma é de 15% sobre as diárias (RN06). Em R$ 139/dia, o repasse líquido por diária é R$ 118,15.</p>
+        </div>
+
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:12px">
+            <h3 class="dtitle" style="margin:0">Fotos</h3>
+            <span class="muted-xs">4 de 8 · capa definida</span>
+          </div>
+          <div class="upload-grid">
+            <div class="upload upload--filled" style="background-color:#dbeafe"><span class="upload__badge">Capa</span></div>
+            <div class="upload upload--filled" style="background-color:#fef3c7"></div>
+            <div class="upload upload--filled" style="background-color:#ede9fe"></div>
+            <div class="upload upload--filled" style="background-color:#d1fae5"></div>
+            <div class="upload"><i class="bi bi-camera"></i><span>Adicionar</span></div>
+            <div class="upload"><i class="bi bi-plus-lg"></i><span>Adicionar</span></div>
+            <div class="upload"><i class="bi bi-plus-lg"></i><span>Adicionar</span></div>
+            <div class="upload"><i class="bi bi-plus-lg"></i><span>Adicionar</span></div>
+          </div>
+          <p class="hint" style="margin-top:12px"><i class="bi bi-shield-check"></i> JPG ou PNG, até 5 MB por foto. Tipo e tamanho são validados no envio (RNF07).</p>
+        </div>
+      </div>
+
+      <aside class="dstack dsticky">
+        <div class="card dpad-sm">
+          <div class="dtitle--row" style="margin-bottom:10px">
+            <h3 class="dtitle" style="margin:0;font-size:12.5px">Disponibilidade</h3>
+            <span class="badge-status is-info">Novembro</span>
+          </div>
+          <div class="cal" style="max-width:none">
+            <span class="dow">D</span><span class="dow">S</span><span class="dow">T</span><span class="dow">Q</span><span class="dow">Q</span><span class="dow">S</span><span class="dow">S</span>
+            <span class="day">1</span><span class="day">2</span><span class="day">3</span><span class="day">4</span><span class="day day--blocked">5</span><span class="day day--blocked">6</span><span class="day day--blocked">7</span>
+            <span class="day">8</span><span class="day">9</span><span class="day">10</span><span class="day">11</span><span class="day day--sel">12</span><span class="day">13</span><span class="day">14</span>
+            <span class="day">15</span><span class="day">16</span><span class="day">17</span><span class="day">18</span><span class="day">19</span><span class="day day--blocked">20</span><span class="day day--blocked">21</span>
+            <span class="day day--blocked">22</span><span class="day">23</span><span class="day">24</span><span class="day">25</span><span class="day">26</span><span class="day">27</span><span class="day">28</span>
+            <span class="day">29</span><span class="day">30</span><span class="day day--out">1</span><span class="day day--out">2</span><span class="day day--out">3</span><span class="day day--out">4</span><span class="day day--out">5</span>
+          </div>
+          <div class="legend">
+            <span><i class="dot dot--free"></i> Livre</span>
+            <span><i class="dot dot--blocked"></i> Bloqueado</span>
+            <span><i class="dot dot--sel"></i> Selecionado</span>
+          </div>
+        </div>
+
+        <div class="card dpad-sm">
+          <h3 class="dtitle" style="font-size:12.5px">Prévia do anúncio</h3>
+          <div class="car-mini card" style="box-shadow:none">
+            <div class="photo photo--d car-mini__img" style="height:120px">
+              <span class="badge-tag">Prévia</span>
+            </div>
+            <div class="car-mini__body">
+              <strong>Chevrolet Onix 2023</strong>
+              <span class="muted-sm">Hatch · Automático · Moema</span>
+              <div class="row-between">
+                <span class="rating"><i class="bi bi-star-fill"></i> Novo</span>
+                <span class="price">R$ 139<small>/dia</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notice">
+          <i class="bi bi-hourglass-split"></i>
+          <div>
+            <strong>Análise do administrador</strong>
+            <span>O anúncio só aparece na busca depois de aprovado (RF08). Enquanto isso, fica como "em análise".</span>
+          </div>
+        </div>
+
+        <a class="btn-brand" href="12-painel.html"><i class="bi bi-cloud-arrow-up"></i> Salvar e enviar para análise</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RF05–RF08 · RN06</span>
+  </footer>
+</body>
+</html>

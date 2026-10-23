@@ -1,7 +1,7 @@
 # AGENTS.md — Memória do projeto ShareCar
 
 > **Leia este arquivo antes de retomar o trabalho.** Ele resume o contexto, as decisões e o estado atual para não ser necessário reler os documentos originais.
-> Última atualização: 21/10/2026.
+> Última atualização: 22/10/2026.
 
 ---
 
@@ -32,6 +32,8 @@ Projeto acadêmico em dupla: **ShareCar**, um marketplace **peer-to-peer de alug
 | Resumo estruturado em Markdown | ✅ `projeto-sharecar.md` |
 | Definição descritiva das 10 primeiras telas | ✅ `10-telas-mvp.md` |
 | Protótipo visual em HTML/CSS das 10 telas | ✅ `prototipo/` |
+| Telas 11–15 (perfil, painel, admin, senha, offline) | ✅ mobile + desktop |
+| Versão desktop das 15 telas | ✅ `prototipo/desktop/` |
 | Validação de renderização (Chrome headless) | ✅ |
 | Repositório Git inicializado + `.gitignore` (commit `e2d6fee`) | ✅ 21/10/2026 |
 | Remoto no GitHub `Luana002/ShareCar` (público, branch `main`) | ✅ 21/10/2026 |
@@ -72,10 +74,12 @@ Desvios: `recusada` (gera estorno), `cancelada`, `estornada`.
 
 ### 3.4 Padrões visuais do protótipo
 
+- Duas versões da mesma navegação: **mobile** em `prototipo/` e **desktop** em `prototipo/desktop/`, ambas com 15 telas.
 - Mobile-first, largura máxima de **440 px**, moldura de celular no desktop.
-- Barra inferior fixa: **Início · Buscar · Reservas · Perfil**.
+- Desktop reutiliza `prototipo/css/style.css` + `prototipo/desktop/css/desktop.css`: cabeçalho fixo, conteúdo até **1240 px**, filtros em coluna lateral, grades de 3–4 colunas, tabelas e cartão de resumo fixo à direita.
+- Barra inferior fixa no mobile: **Início · Buscar · Reservas · Perfil**; no desktop, o mesmo menu vai para o cabeçalho.
 - Cor da marca: **verde-teal** (`#0d9488` / `#0f766e`), fundo claro e cartões arredondados.
-- CSS próprio (`prototipo/css/style.css`), **sem Bootstrap CSS**; apenas **Bootstrap Icons** e fonte **Inter** via CDN.
+- CSS próprio, **sem Bootstrap CSS**; apenas **Bootstrap Icons** e fonte **Inter** via CDN.
 - Fotos de carro são placeholders em SVG (`prototipo/assets/car.svg`), com variações de cor.
 - O frontend de produção deve usar **Bootstrap 5**, conforme a stack obrigatória; o protótipo é apenas referência visual.
 
@@ -85,6 +89,9 @@ Desvios: `recusada` (gera estorno), `cancelada`, `estornada`.
 - Grids de formulário usam `minmax(0, 1fr)` + `min-width: 0` para os inputs não estourarem.
 - Moldura do celular usa `overflow: clip` no desktop para arredondar as bordas sem quebrar o `position: sticky`.
 - Screenshots com Chrome headless precisam de `--virtual-time-budget=8000` para esperar a fonte de ícones carregar.
+- **22/10/2026:** removido o bloco "Para anunciar / Para reservar" da tela 01 (login), a pedido da dupla.
+- Chrome headless no Windows **força largura mínima de ~500 px**: screenshots menores que isso saem cortados. Use `--window-size=520` para validar o mobile.
+- Selos `.badge-fav`/`.badge-tag` são `position: absolute`: só funcionam dentro de um contêiner posicionado (`.photo`). Para selos soltos, usar `.dhero__badge` / `.dglass-pill` no desktop.
 
 ### 3.6 Versionamento (definido em 21/10/2026)
 
@@ -110,7 +117,7 @@ C:\Users\00022593\projeto\
 ├── 10-telas-mvp.md            # descrição das 10 telas
 └── prototipo\
     ├── README.md
-    ├── index.html             # galeria das 10 telas
+    ├── index.html             # galeria mobile das 15 telas
     ├── 01-entrar.html
     ├── 02-home.html
     ├── 03-resultados.html
@@ -121,11 +128,20 @@ C:\Users\00022593\projeto\
     ├── 08-checkin.html
     ├── 09-veiculo.html
     ├── 10-avaliacao.html
-    ├── css\style.css
-    └── assets\car.svg
+    ├── 11-perfil.html
+    ├── 12-painel.html
+    ├── 13-admin.html
+    ├── 14-recuperar-senha.html
+    ├── 15-offline.html
+    ├── css\style.css         # base mobile + componentes das telas 11–15
+    ├── assets\car.svg
+    └── desktop\
+        ├── index.html        # galeria desktop das 15 telas
+        ├── 01-entrar.html ... 15-offline.html
+        └── css\desktop.css   # camada de layout amplo sobre ../css/style.css
 ```
 
-Fluxo clicável: `01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 10`. O cadastro de veículo (`09`) é acessado pelo atalho "Tem um carro parado?" na home.
+Fluxo clicável (igual nas duas versões): `01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 10`. O cadastro de veículo (`09`) é acessado pelo atalho "Tem um carro parado?" na home e pelo painel; `11` (perfil), `12` (painel) e `13` (admin) formam a segunda leva; `14` sai do "Esqueci minha senha"; `15` representa o estado offline do PWA.
 
 ---
 

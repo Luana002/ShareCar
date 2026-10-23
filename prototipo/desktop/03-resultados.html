@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Resultados (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a class="is-active" href="03-resultados.html">Buscar</a>
+        <a href="07-reservas.html">Reservas</a>
+        <a href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> São Paulo · 12–16 nov</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="02-home.html"><i class="bi bi-chevron-left"></i> Alterar busca</a>
+        <h1>Carros em São Paulo</h1>
+        <p>12–16 nov · 4 diárias · retirada 09:00, devolução 18:00 · apenas veículos aprovados e livres</p>
+      </div>
+      <div class="dactions">
+        <span class="count">24 carros disponíveis</span>
+        <span class="sort"><i class="bi bi-sort-down"></i> Menor preço</span>
+      </div>
+    </div>
+
+    <div class="dcols dcols--filters">
+      <aside class="dstack">
+        <div class="card dpad-sm">
+          <div class="dtitle--row" style="margin-bottom:14px">
+            <h3 class="title" style="margin:0;font-size:13px">Filtros</h3>
+            <a class="link" href="03-resultados.html">Limpar</a>
+          </div>
+          <div class="dfilter">
+            <div class="field">
+              <label for="preco">Faixa de preço</label>
+              <div class="input">
+                <span class="prefix">R$</span>
+                <input id="preco" type="text" value="100 – 250">
+                <span class="suffix">/dia</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Categoria</label>
+              <div class="chip-wrap">
+                <span class="chip chip--soft is-active">Hatch</span>
+                <span class="chip chip--soft">Sedã</span>
+                <span class="chip chip--soft">SUV</span>
+                <span class="chip chip--soft">Picape</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Câmbio</label>
+              <div class="chip-wrap">
+                <span class="chip chip--soft">Manual</span>
+                <span class="chip chip--soft is-active">Automático</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Combustível</label>
+              <div class="chip-wrap">
+                <span class="chip chip--soft is-active">Flex</span>
+                <span class="chip chip--soft">Diesel</span>
+                <span class="chip chip--soft">Elétrico</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Passageiros</label>
+              <div class="chip-wrap">
+                <span class="chip chip--soft is-active">5</span>
+                <span class="chip chip--soft">7</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Nota mínima</label>
+              <div class="chip-wrap">
+                <span class="chip chip--soft">4,5</span>
+                <span class="chip chip--soft is-active">4,8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad-sm">
+          <div class="notice notice--brand" style="font-size:11.5px">
+            <i class="bi bi-calendar-check"></i>
+            <div>
+              <strong>Agenda verificada</strong>
+              <span>Bloqueios e reservas ativas já foram descontados do período (RN01, RN03).</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="dstack">
+        <div class="dcars">
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--a car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+              <span class="badge-tag badge-tag--green"><i class="bi bi-lightning-charge-fill"></i> Entrega grátis</span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Fiat Argo 2021</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,8</span>
+              </div>
+              <span class="muted-sm">Hatch · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-fuel-pump"></i> Flex</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Vila Madalena</span>
+                <span class="price">R$ 150<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--b car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Hyundai HB20 2022</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,7</span>
+              </div>
+              <span class="muted-sm">Hatch · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Automático</span>
+                <span><i class="bi bi-fuel-pump"></i> Flex</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Pinheiros</span>
+                <span class="price">R$ 129<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--d car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+              <span class="badge-tag">Novo anúncio</span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Chevrolet Onix 2023</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,9</span>
+              </div>
+              <span class="muted-sm">Hatch · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Automático</span>
+                <span><i class="bi bi-fuel-pump"></i> Flex</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Moema</span>
+                <span class="price">R$ 139<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--c car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Jeep Renegade 2022</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,9</span>
+              </div>
+              <span class="muted-sm">SUV · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Automático</span>
+                <span><i class="bi bi-fuel-pump"></i> Diesel</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Itaim Bibi</span>
+                <span class="price">R$ 189<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--e car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Toyota Corolla 2022</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 5,0</span>
+              </div>
+              <span class="muted-sm">Sedã · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Automático</span>
+                <span><i class="bi bi-fuel-pump"></i> Flex</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Pinheiros</span>
+                <span class="price">R$ 320<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+
+          <a class="car-card card" href="04-detalhes.html">
+            <div class="photo photo--f car-card__img">
+              <span class="badge-fav"><i class="bi bi-heart"></i></span>
+            </div>
+            <div class="car-card__body">
+              <div class="row-between">
+                <strong>Honda City 2023</strong>
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,9</span>
+              </div>
+              <span class="muted-sm">Sedã · 5 lugares</span>
+              <div class="spec-row">
+                <span><i class="bi bi-gear"></i> Automático</span>
+                <span><i class="bi bi-fuel-pump"></i> Flex</span>
+                <span><i class="bi bi-snow"></i> Ar</span>
+              </div>
+              <div class="row-between">
+                <span class="loc"><i class="bi bi-geo-alt"></i> Moema</span>
+                <span class="price">R$ 240<small>/dia</small></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="dpager">
+          <span><i class="bi bi-chevron-left"></i></span>
+          <span class="is-on">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>24 resultados · página 1 de 4</span>
+  </footer>
+</body>
+</html>

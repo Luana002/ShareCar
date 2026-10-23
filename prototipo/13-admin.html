@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Administração</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="proto">
+  <div class="phone">
+    <div class="screen">
+      <header class="appbar">
+        <a class="icon-btn" href="11-perfil.html" aria-label="Voltar"><i class="bi bi-chevron-left"></i></a>
+        <div class="appbar__center appbar__center--left"><h1>Administração</h1></div>
+        <button class="icon-btn" type="button" aria-label="Filtros"><i class="bi bi-sliders"></i></button>
+      </header>
+
+      <main class="screen-body">
+        <div class="notice notice--info">
+          <i class="bi bi-shield-lock"></i>
+          <div>
+            <strong>Área restrita</strong>
+            <span>Só o administrador vê documentos, CNH e dados de pagamento dos usuários (RNF05).</span>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat">
+            <small>Aprovações</small>
+            <strong>4</strong>
+            <span>aguardando análise</span>
+          </div>
+          <div class="stat">
+            <small>Veículos</small>
+            <strong>2</strong>
+            <span>em análise</span>
+          </div>
+          <div class="stat stat--brand">
+            <small>Comissão</small>
+            <strong>15%</strong>
+            <span>sobre as diárias</span>
+          </div>
+          <div class="stat">
+            <small>Usuários</small>
+            <strong>128</strong>
+            <span>3 bloqueados</span>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:12px">
+            <h3 class="card-title" style="margin:0">Aprovações pendentes</h3>
+            <span class="badge-status is-pending">4 itens</span>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Documento · Carla Dias</strong>
+              <span>RG enviado em 18 out · primeira locação</span>
+            </div>
+            <div class="admin-actions">
+              <button class="btn-ghost" type="button">Recusar</button>
+              <button class="btn-brand" type="button">Aprovar</button>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>CNH · Pedro Alves</strong>
+              <span>Validade 03/2028 · categoria B</span>
+            </div>
+            <div class="admin-actions">
+              <button class="btn-ghost" type="button">Recusar</button>
+              <button class="btn-brand" type="button">Aprovar</button>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Veículo · Chevrolet Onix 2023</strong>
+              <span>Marina Souza · 4 fotos · R$ 139/dia</span>
+            </div>
+            <div class="admin-actions">
+              <button class="btn-ghost" type="button">Recusar</button>
+              <button class="btn-brand" type="button">Aprovar</button>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Veículo · Renault Kwid 2022</strong>
+              <span>João Lima · 3 fotos · R$ 98/dia</span>
+            </div>
+            <div class="admin-actions">
+              <button class="btn-ghost" type="button">Recusar</button>
+              <button class="btn-brand" type="button">Aprovar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <h3 class="card-title">Comissão da plataforma</h3>
+          <div class="field" style="margin-bottom:10px">
+            <label for="comissao">Percentual sobre as diárias</label>
+            <div class="input">
+              <i class="bi bi-percent"></i>
+              <input id="comissao" type="text" value="15">
+              <span class="suffix">%</span>
+            </div>
+          </div>
+          <div class="price-line"><span>4 diárias × R$ 150</span><span>R$ 600,00</span></div>
+          <div class="price-line"><span>Comissão (15%)</span><span>R$ 90,00</span></div>
+          <div class="price-line price-line--total"><span>Repasse ao proprietário</span><strong>R$ 510,00</strong></div>
+          <p class="hint" style="margin-top:10px">
+            <i class="bi bi-info-circle"></i> O padrão é 15% e a alteração vale para as novas reservas (RN06, RN07).
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:10px">
+            <h3 class="card-title" style="margin:0">Reservas e pagamentos</h3>
+            <a class="link" href="#">Ver todas</a>
+          </div>
+          <div class="chip-row" style="margin-bottom:10px">
+            <span class="chip is-active">Todas</span>
+            <span class="chip">Pagas</span>
+            <span class="chip">Estornadas</span>
+            <span class="chip">Recusadas</span>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>#1042 · Fiat Argo</strong>
+              <span>Marina → Rafael · Pix aprovado</span>
+            </div>
+            <div style="text-align:right">
+              <strong style="font-size:13px">R$ 600</strong>
+              <span class="muted-xs" style="display:block">repasse R$ 510</span>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>#1035 · Toyota Corolla</strong>
+              <span>Ana Beatriz → Marina · cartão estornado</span>
+            </div>
+            <div style="text-align:right">
+              <strong style="font-size:13px">R$ 1.280</strong>
+              <span class="muted-xs" style="display:block">estorno integral</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:10px">
+            <h3 class="card-title" style="margin:0">Contas bloqueadas</h3>
+            <span class="badge-status is-danger">3</span>
+          </div>
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Bruno Tavares</strong>
+              <span>Bloqueado em 09 out · inadimplência</span>
+            </div>
+            <button class="btn-ghost btn-sm" type="button">Desbloquear</button>
+          </div>
+          <p class="muted-xs" style="margin:10px 0 0">Contas bloqueadas não podem reservar nem anunciar (RF27).</p>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

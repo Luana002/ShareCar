@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Entrar (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <div class="dauth">
+    <section class="dauth__brand">
+      <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span>
+      <h1>Alugue o carro<br>de alguém.</h1>
+      <p>O ShareCar conecta quem precisa de um carro a quem tem um parado na garagem. Reserve pelo app, pague de forma simulada e combine a retirada.</p>
+      <div class="dauth__list">
+        <div><i class="bi bi-search"></i><span>Busque por cidade e período, com filtros de preço, categoria e câmbio.</span></div>
+        <div><i class="bi bi-shield-check"></i><span>Proprietários, documentos e veículos aprovados pelo administrador.</span></div>
+        <div><i class="bi bi-phone"></i><span>Instale como app e mantenha as telas principais disponíveis offline.</span></div>
+      </div>
+    </section>
+
+    <section class="dauth__form">
+      <h2>Entrar na sua conta</h2>
+      <p>Use o e-mail e a senha do cadastro. Um mesmo usuário pode alugar e anunciar.</p>
+
+      <div class="auth-card">
+        <div class="seg">
+          <button class="is-active" type="button">Entrar</button>
+          <button type="button">Criar conta</button>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <div class="input">
+            <i class="bi bi-envelope"></i>
+            <input id="email" type="email" placeholder="voce@email.com" value="marina@email.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="senha">Senha</label>
+          <div class="input">
+            <i class="bi bi-lock"></i>
+            <input id="senha" type="password" placeholder="Sua senha" value="12345678">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+
+        <div class="row-between">
+          <label class="check"><input type="checkbox" checked> Manter conectado</label>
+          <a class="link" href="14-recuperar-senha.html">Esqueci minha senha</a>
+        </div>
+
+        <a class="btn-brand" href="02-home.html">Entrar <i class="bi bi-arrow-right"></i></a>
+
+        <div class="divider">ou</div>
+
+        <a class="btn-ghost" href="02-home.html">Criar uma conta</a>
+      </div>
+
+      <p class="muted-xs">Ao continuar, você aceita os Termos de uso e a Política de privacidade. Ambiente de demonstração: nenhum dado real é processado.</p>
+
+      <div class="install-banner">
+        <i class="bi bi-phone"></i>
+        <div>
+          <strong>Instale o ShareCar</strong>
+          <span>Adicione à tela inicial e use como app.</span>
+        </div>
+        <button class="btn-soft" type="button">Instalar</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Painel do proprietário (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a href="07-reservas.html">Reservas</a>
+        <a class="is-active" href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> Buscar por cidade ou modelo</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="11-perfil.html"><i class="bi bi-chevron-left"></i> Voltar ao perfil</a>
+        <h1>Painel do proprietário</h1>
+        <p>Indicadores da frota, repasses e status de cada anúncio.</p>
+      </div>
+      <div class="dactions">
+        <a class="btn-ghost" href="07-reservas.html"><i class="bi bi-journal-text"></i> Reservas</a>
+        <a class="btn-brand" href="09-veiculo.html"><i class="bi bi-plus-lg"></i> Anunciar veículo</a>
+      </div>
+    </div>
+
+    <div class="dgrid dgrid--4" style="margin-bottom:18px">
+      <div class="dstat">
+        <small>Faturamento em nov</small>
+        <strong>R$ 3.810</strong>
+        <span>bruto das diárias</span>
+      </div>
+      <div class="dstat dstat--brand">
+        <small>Repasse líquido</small>
+        <strong>R$ 3.238</strong>
+        <span>com comissão de 15%</span>
+      </div>
+      <div class="dstat">
+        <small>Ocupação</small>
+        <strong>68%</strong>
+        <span>dos dias anunciados</span>
+      </div>
+      <div class="dstat">
+        <small>Nota média</small>
+        <strong>4,9</strong>
+        <span>18 avaliações</span>
+      </div>
+    </div>
+
+    <div class="dcols">
+      <div class="dstack">
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:4px">
+            <h3 class="dtitle" style="margin:0">Ganhos por semana</h3>
+            <span class="badge-status is-info">Novembro de 2026</span>
+          </div>
+          <div class="chart">
+            <div><span style="height:32%"></span><small>S1</small></div>
+            <div><span style="height:48%"></span><small>S2</small></div>
+            <div><span style="height:41%"></span><small>S3</small></div>
+            <div><span style="height:72%"></span><small>S4</small></div>
+            <div><span style="height:88%"></span><small>S5</small></div>
+            <div><span style="height:56%"></span><small>S6</small></div>
+          </div>
+          <p class="muted-xs" style="margin:10px 0 0">Valores brutos das diárias, antes da comissão da plataforma.</p>
+        </div>
+
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:6px">
+            <h3 class="dtitle" style="margin:0">Próximos repasses</h3>
+            <a class="link" href="07-reservas.html">Ver reservas</a>
+          </div>
+          <table class="dtable">
+            <thead>
+              <tr>
+                <th>Reserva</th>
+                <th>Período</th>
+                <th class="num">Bruto</th>
+                <th class="num">Comissão</th>
+                <th class="num">Repasse</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>#1042 · Fiat Argo</strong></td>
+                <td>12–16 nov</td>
+                <td class="num">R$ 600,00</td>
+                <td class="num">R$ 90,00</td>
+                <td class="num"><strong>R$ 510,00</strong></td>
+                <td><span class="badge-status is-ok">A liberar</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1039 · Honda City</strong></td>
+                <td>10–14 nov</td>
+                <td class="num">R$ 960,00</td>
+                <td class="num">R$ 144,00</td>
+                <td class="num"><strong>R$ 816,00</strong></td>
+                <td><span class="badge-status is-ok">A liberar</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1036 · Jeep Renegade</strong></td>
+                <td>22–25 nov</td>
+                <td class="num">R$ 567,00</td>
+                <td class="num">R$ 85,05</td>
+                <td class="num"><strong>R$ 481,95</strong></td>
+                <td><span class="badge-status is-pending">Aguardando</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1028 · Toyota Corolla</strong></td>
+                <td>01–05 nov</td>
+                <td class="num">R$ 1.280,00</td>
+                <td class="num">R$ 192,00</td>
+                <td class="num"><strong>R$ 1.088,00</strong></td>
+                <td><span class="badge-status is-done">Pago</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="muted-xs" style="margin:12px 0 0">
+            O repasse é liberado 24 h após o check-out, já descontada a comissão de 15% (RN06, RN07).
+          </p>
+        </div>
+
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:6px">
+            <h3 class="dtitle" style="margin:0">Minha frota</h3>
+            <a class="link" href="09-veiculo.html">Anunciar novo</a>
+          </div>
+          <table class="dtable">
+            <thead>
+              <tr>
+                <th>Veículo</th>
+                <th>Localização</th>
+                <th class="num">Diária</th>
+                <th>Ocupação</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="dcell-car">
+                    <div class="photo photo--d dthumb"></div>
+                    <strong>Honda City 2023</strong>
+                  </div>
+                </td>
+                <td>Moema</td>
+                <td class="num">R$ 240</td>
+                <td>74%</td>
+                <td><span class="badge-status is-ok">Aprovado</span></td>
+                <td><a class="link" href="09-veiculo.html">Editar</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="dcell-car">
+                    <div class="photo photo--c dthumb"></div>
+                    <strong>Jeep Renegade 2022</strong>
+                  </div>
+                </td>
+                <td>Itaim Bibi</td>
+                <td class="num">R$ 189</td>
+                <td>61%</td>
+                <td><span class="badge-status is-ok">Aprovado</span></td>
+                <td><a class="link" href="09-veiculo.html">Editar</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="dcell-car">
+                    <div class="photo photo--b dthumb"></div>
+                    <strong>Chevrolet Onix 2023</strong>
+                  </div>
+                </td>
+                <td>Moema</td>
+                <td class="num">R$ 139</td>
+                <td>—</td>
+                <td><span class="badge-status is-pending">Em análise</span></td>
+                <td><a class="link" href="13-admin.html">Acompanhar</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="dcell-car">
+                    <div class="photo photo--f dthumb"></div>
+                    <strong>Fiat Argo 2021</strong>
+                  </div>
+                </td>
+                <td>Vila Madalena</td>
+                <td class="num">R$ 150</td>
+                <td>Pausado</td>
+                <td><span class="badge-status is-done">Desativado</span></td>
+                <td><a class="link" href="09-veiculo.html">Reativar</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="muted-xs" style="margin:12px 0 0">
+            Um veículo só aparece na busca depois da aprovação do administrador (RF08).
+          </p>
+        </div>
+      </div>
+
+      <aside class="dstack dsticky">
+        <div class="card dside">
+          <h3>Atalhos</h3>
+          <nav class="dside__nav">
+            <a href="07-reservas.html"><i class="bi bi-journal-text"></i><span>Solicitações pendentes</span></a>
+            <a href="09-veiculo.html"><i class="bi bi-plus-square"></i><span>Cadastrar veículo</span></a>
+            <a href="08-checkin.html"><i class="bi bi-camera"></i><span>Check-in e check-out</span></a>
+            <a href="11-perfil.html"><i class="bi bi-person"></i><span>Meu perfil</span></a>
+          </nav>
+        </div>
+
+        <div class="card dpad-sm">
+          <h3 class="dtitle" style="font-size:12.5px">Resumo financeiro</h3>
+          <div class="price-line"><span>Bruto do mês</span><span>R$ 3.810,00</span></div>
+          <div class="price-line"><span>Comissão (15%)</span><span>− R$ 571,50</span></div>
+          <div class="price-line price-line--total"><span>Líquido</span><strong>R$ 3.238,50</strong></div>
+          <p class="muted-xs" style="margin:10px 0 0">Valores fictícios para demonstração.</p>
+        </div>
+
+        <div class="notice notice--brand">
+          <i class="bi bi-lightbulb"></i>
+          <div>
+            <strong>Dica</strong>
+            <span>Anúncios com pelo menos 5 fotos e descrição completa costumam converter mais.</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RF05, RF19 · RN06, RN07</span>
+  </footer>
+</body>
+</html>

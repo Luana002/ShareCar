@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Minhas reservas (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a class="is-active" href="07-reservas.html">Reservas</a>
+        <a href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> Buscar por cidade ou modelo</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="02-home.html"><i class="bi bi-chevron-left"></i> Voltar ao início</a>
+        <h1>Minhas reservas</h1>
+        <p>Acompanhe solicitações, locações em andamento e histórico das duas pontas.</p>
+      </div>
+      <div class="dactions">
+        <span class="count">4 reservas no período</span>
+      </div>
+    </div>
+
+    <div class="card dpad">
+      <div class="dtopbar-filter">
+        <div class="seg" style="flex:0 0 430px;max-width:430px">
+          <button type="button">Como locatário</button>
+          <button class="is-active" type="button">Como proprietário</button>
+        </div>
+        <div class="chip-row" style="margin-left:auto">
+          <span class="chip is-active">Todas</span>
+          <span class="chip">Solicitadas</span>
+          <span class="chip">Ativas</span>
+          <span class="chip">Concluídas</span>
+        </div>
+      </div>
+
+      <table class="dtable">
+        <thead>
+          <tr>
+            <th>Veículo</th>
+            <th>Contraparte</th>
+            <th>Período</th>
+            <th class="num">Total</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="dcell-car">
+                <div class="photo photo--b dthumb"></div>
+                <div>
+                  <strong style="display:block">Hyundai HB20</strong>
+                  <span class="muted-xs">2022 · Hatch</span>
+                </div>
+              </div>
+            </td>
+            <td>João Lima</td>
+            <td>18–21 nov · 3 diárias</td>
+            <td class="num"><strong>R$ 387,00</strong></td>
+            <td><span class="badge-status is-pending">Solicitada</span></td>
+            <td>
+              <div class="admin-actions">
+                <button class="btn-ghost btn-sm" type="button">Recusar</button>
+                <button class="btn-brand btn-sm" type="button">Aceitar</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="dcell-car">
+                <div class="photo photo--c dthumb"></div>
+                <div>
+                  <strong style="display:block">Jeep Renegade</strong>
+                  <span class="muted-xs">2022 · SUV</span>
+                </div>
+              </div>
+            </td>
+            <td>Carla Dias</td>
+            <td>22–25 nov · 3 diárias</td>
+            <td class="num"><strong>R$ 567,00</strong></td>
+            <td><span class="badge-status is-ok">Confirmada</span></td>
+            <td><a class="link" href="08-checkin.html">Ver detalhes</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="dcell-car">
+                <div class="photo photo--d dthumb"></div>
+                <div>
+                  <strong style="display:block">Honda City</strong>
+                  <span class="muted-xs">2023 · Sedã</span>
+                </div>
+              </div>
+            </td>
+            <td>Pedro Alves</td>
+            <td>10–14 nov · 4 diárias</td>
+            <td class="num"><strong>R$ 960,00</strong></td>
+            <td><span class="badge-status is-info">Em andamento</span></td>
+            <td><a class="link" href="08-checkin.html">Fazer check-out</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="dcell-car">
+                <div class="photo photo--e dthumb"></div>
+                <div>
+                  <strong style="display:block">Toyota Corolla</strong>
+                  <span class="muted-xs">2022 · Sedã</span>
+                </div>
+              </div>
+            </td>
+            <td>Ana Beatriz</td>
+            <td>01–05 nov · 4 diárias</td>
+            <td class="num"><strong>R$ 1.280,00</strong></td>
+            <td><span class="badge-status is-done">Concluída</span></td>
+            <td><a class="link" href="10-avaliacao.html">Avaliar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dgrid dgrid--3" style="margin-top:18px">
+      <div class="notice notice--brand">
+        <i class="bi bi-shield-check"></i>
+        <div>
+          <strong>Sem sobreposição</strong>
+          <span>Reservas sobrepostas para o mesmo veículo são bloqueadas (RN01) e apenas uma vence em acessos simultâneos (RN02).</span>
+        </div>
+      </div>
+      <div class="notice notice--info">
+        <i class="bi bi-arrow-repeat"></i>
+        <div>
+          <strong>Transições válidas</strong>
+          <span>O sistema só permite os próximos status do ciclo; ações fora de hora ficam desabilitadas (RN08).</span>
+        </div>
+      </div>
+      <div class="notice">
+        <i class="bi bi-cash-coin"></i>
+        <div>
+          <strong>Repasse do proprietário</strong>
+          <span>O valor líquido é liberado 24 h após o check-out, com a comissão de 15% descontada (RN06).</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RF15–RF17 · RN01, RN02, RN08</span>
+  </footer>
+</body>
+</html>

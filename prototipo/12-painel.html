@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Painel do proprietário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="proto">
+  <div class="phone">
+    <div class="screen">
+      <header class="appbar">
+        <a class="icon-btn" href="11-perfil.html" aria-label="Voltar"><i class="bi bi-chevron-left"></i></a>
+        <div class="appbar__center appbar__center--left"><h1>Painel do proprietário</h1></div>
+        <a class="icon-btn" href="09-veiculo.html" aria-label="Anunciar veículo"><i class="bi bi-plus-lg"></i></a>
+      </header>
+
+      <main class="screen-body">
+        <div class="stat-grid">
+          <div class="stat">
+            <small>Faturamento em nov</small>
+            <strong>R$ 3.810</strong>
+            <span>bruto das diárias</span>
+          </div>
+          <div class="stat stat--brand">
+            <small>Repasse líquido</small>
+            <strong>R$ 3.238</strong>
+            <span>já com a comissão de 15%</span>
+          </div>
+          <div class="stat">
+            <small>Ocupação</small>
+            <strong>68%</strong>
+            <span>dos dias anunciados</span>
+          </div>
+          <div class="stat">
+            <small>Nota média</small>
+            <strong>4,9</strong>
+            <span>18 avaliações</span>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:2px">
+            <h3 class="card-title" style="margin:0">Ganhos por semana</h3>
+            <span class="muted-xs">Novembro</span>
+          </div>
+          <div class="chart">
+            <div><span style="height:32%"></span><small>S1</small></div>
+            <div><span style="height:48%"></span><small>S2</small></div>
+            <div><span style="height:41%"></span><small>S3</small></div>
+            <div><span style="height:72%"></span><small>S4</small></div>
+            <div><span style="height:88%"></span><small>S5</small></div>
+            <div><span style="height:56%"></span><small>S6</small></div>
+          </div>
+          <p class="muted-xs" style="margin:8px 0 0">Valores brutos das diárias, antes da comissão da plataforma.</p>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:12px">
+            <h3 class="card-title" style="margin:0">Próximos repasses</h3>
+            <span class="badge-status is-info">RN07</span>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Reserva #1042 · Fiat Argo</strong>
+              <span>12–16 nov · 4 diárias · R$ 600 bruto</span>
+            </div>
+            <div style="text-align:right">
+              <strong style="font-size:13px">R$ 510</strong>
+              <span class="muted-xs" style="display:block">comissão R$ 90</span>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Reserva #1039 · Honda City</strong>
+              <span>10–14 nov · 4 diárias · R$ 960 bruto</span>
+            </div>
+            <div style="text-align:right">
+              <strong style="font-size:13px">R$ 816</strong>
+              <span class="muted-xs" style="display:block">comissão R$ 144</span>
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Reserva #1036 · Jeep Renegade</strong>
+              <span>22–25 nov · 3 diárias · R$ 567 bruto</span>
+            </div>
+            <div style="text-align:right">
+              <strong style="font-size:13px">R$ 482</strong>
+              <span class="muted-xs" style="display:block">comissão R$ 85</span>
+            </div>
+          </div>
+
+          <p class="muted-xs" style="margin:10px 0 0">
+            O repasse é liberado 24 h após o check-out, já descontada a comissão de 15% (RN06).
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <div class="row-between" style="margin-bottom:12px">
+            <h3 class="card-title" style="margin:0">Minha frota</h3>
+            <a class="link" href="09-veiculo.html">Anunciar</a>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Honda City 2023</strong>
+              <span>R$ 240/dia · Moema</span>
+            </div>
+            <span class="badge-status is-ok">Aprovado</span>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Jeep Renegade 2022</strong>
+              <span>R$ 189/dia · Itaim Bibi</span>
+            </div>
+            <span class="badge-status is-ok">Aprovado</span>
+          </div>
+
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Chevrolet Onix 2023</strong>
+              <span>R$ 139/dia · Moema</span>
+            </div>
+            <span class="badge-status is-pending">Em análise</span>
+          </div>
+
+          <a class="btn-ghost" href="09-veiculo.html" style="margin-top:12px">
+            <i class="bi bi-plus-lg"></i> Cadastrar novo veículo
+          </a>
+        </div>
+
+        <p class="muted-xs" style="text-align:center;margin:2px 0 0">
+          Um veículo só aparece na busca depois da aprovação do administrador (RF08).
+        </p>
+      </main>
+
+      <nav class="tabbar">
+        <a class="tab" href="02-home.html"><i class="bi bi-house"></i> Início</a>
+        <a class="tab" href="03-resultados.html"><i class="bi bi-search"></i> Buscar</a>
+        <a class="tab" href="07-reservas.html"><i class="bi bi-journal-text"></i> Reservas</a>
+        <a class="tab is-active" href="11-perfil.html"><i class="bi bi-person"></i> Perfil</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

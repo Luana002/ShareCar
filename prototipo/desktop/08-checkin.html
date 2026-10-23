@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Check-in e check-out (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a class="is-active" href="07-reservas.html">Reservas</a>
+        <a href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> Buscar por cidade ou modelo</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="07-reservas.html"><i class="bi bi-chevron-left"></i> Voltar às reservas</a>
+        <h1>Reserva #1042</h1>
+        <p>Fiat Argo 2021 · 12–16 nov · 4 diárias · em andamento</p>
+      </div>
+      <div class="dactions">
+        <span class="badge-status is-info">Em andamento</span>
+        <button class="icon-btn" type="button" aria-label="Mais opções"><i class="bi bi-three-dots"></i></button>
+      </div>
+    </div>
+
+    <div class="dcols">
+      <div class="dstack">
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:14px">
+            <h3 class="dtitle" style="margin:0">Acompanhamento</h3>
+            <div class="drow" style="gap:18px">
+              <div class="drow" style="gap:8px">
+                <div class="avatar">RC</div>
+                <span class="muted-sm">Rafael<br><span class="muted-xs">Proprietário</span></span>
+              </div>
+              <i class="bi bi-arrow-left-right" style="color:var(--muted-2)"></i>
+              <div class="drow" style="gap:8px">
+                <div class="avatar">MS</div>
+                <span class="muted-sm">Marina<br><span class="muted-xs">Locatária</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="tl-item is-done">
+              <span class="tl-dot"><i class="bi bi-check"></i></span>
+              <div><strong>Solicitada</strong><span>20 out · 14:32</span></div>
+            </div>
+            <div class="tl-item is-done">
+              <span class="tl-dot"><i class="bi bi-check"></i></span>
+              <div><strong>Paga</strong><span>20 out · 14:40 · Pix aprovado</span></div>
+            </div>
+            <div class="tl-item is-done">
+              <span class="tl-dot"><i class="bi bi-check"></i></span>
+              <div><strong>Aceita pelo proprietário</strong><span>20 out · 16:05</span></div>
+            </div>
+            <div class="tl-item is-current">
+              <span class="tl-dot"><i class="bi bi-circle-fill" style="font-size:6px"></i></span>
+              <div><strong>Check-in realizado</strong><span>12 nov · 09:12 · 42.180 km</span></div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="bi bi-circle"></i></span>
+              <div><strong>Check-out</strong><span>Aguardando devolução</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:12px">
+            <h3 class="dtitle" style="margin:0">Retirada · check-in</h3>
+            <span class="badge-status is-ok">Concluído</span>
+          </div>
+
+          <div class="dgrid dgrid--2" style="align-items:start">
+            <div>
+              <div class="upload-grid">
+                <div class="upload upload--filled" style="background-color:#dbeafe"><span class="upload-check"><i class="bi bi-check"></i></span></div>
+                <div class="upload upload--filled" style="background-color:#fef3c7"><span class="upload-check"><i class="bi bi-check"></i></span></div>
+                <div class="upload upload--filled" style="background-color:#ede9fe"><span class="upload-check"><i class="bi bi-check"></i></span></div>
+                <div class="upload upload--filled" style="background-color:#d1fae5"><span class="upload-check"><i class="bi bi-check"></i></span></div>
+              </div>
+              <p class="muted-xs" style="margin:8px 0 0">6 fotos registradas · frente, traseira, laterais, interior e painel</p>
+            </div>
+            <div class="data-grid" style="margin-top:0">
+              <div><small>Quilometragem</small><strong>42.180 km</strong></div>
+              <div><small>Combustível</small><strong>7 de 8</strong></div>
+              <div><small>Registrado em</small><strong>12 nov · 09:12</strong></div>
+              <div><small>Responsável</small><strong>Marina Souza</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:12px">
+            <h3 class="dtitle" style="margin:0">Devolução · check-out</h3>
+            <span class="badge-status is-pending">Pendente</span>
+          </div>
+
+          <div class="upload-grid">
+            <div class="upload"><i class="bi bi-camera"></i><span>Frente</span></div>
+            <div class="upload"><i class="bi bi-camera"></i><span>Traseira</span></div>
+            <div class="upload"><i class="bi bi-camera"></i><span>Laterais</span></div>
+            <div class="upload"><i class="bi bi-camera"></i><span>Interior</span></div>
+          </div>
+          <p class="muted-xs" style="margin:8px 0 14px">JPG ou PNG até 5 MB por foto, com validação de tipo e tamanho (RNF07).</p>
+
+          <div class="dgrid dgrid--2" style="align-items:start">
+            <div class="field">
+              <label for="km">Quilometragem final</label>
+              <div class="input">
+                <i class="bi bi-speedometer2"></i>
+                <input id="km" type="text" value="42.180" inputmode="numeric">
+                <span class="suffix">km</span>
+              </div>
+              <p class="hint"><i class="bi bi-info-circle"></i> Não pode ser menor que a retirada (42.180 km). RN10</p>
+            </div>
+
+            <div class="field">
+              <label>Nível de combustível</label>
+              <div class="fuel-scale">
+                <span class="is-on"></span><span class="is-on"></span><span class="is-on"></span><span class="is-on"></span>
+                <span class="is-on"></span><span class="is-on"></span><span class="is-on"></span><span></span>
+              </div>
+              <span class="muted-xs">7 de 8 · mesmo nível da retirada</span>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top:12px">
+            <label for="obs">Observações</label>
+            <textarea id="obs" rows="3" placeholder="Arranhões, avarias ou detalhes da devolução..."></textarea>
+          </div>
+
+          <a class="btn-brand" href="10-avaliacao.html" style="margin-top:14px;width:auto">
+            <i class="bi bi-check2-circle"></i> Registrar devolução
+          </a>
+        </div>
+      </div>
+
+      <aside class="dstack dsticky">
+        <div class="card dpad-sm">
+          <h3 class="dtitle" style="font-size:12.5px">Comparativo</h3>
+          <div class="compare-grid">
+            <div class="compare-col">
+              <span class="compare-head">Retirada</span>
+              <strong>42.180 km</strong>
+              <span>7/8 combustível</span>
+              <span>6 fotos · 12 nov</span>
+            </div>
+            <div class="compare-col">
+              <span class="compare-head">Devolução</span>
+              <strong>—</strong>
+              <span>Aguardando registro</span>
+              <span>0 fotos</span>
+            </div>
+          </div>
+          <p class="muted-xs" style="margin:10px 0 0">Após o check-out, os dois registros aparecem lado a lado (RF23).</p>
+        </div>
+
+        <div class="card dpad-sm">
+          <h3 class="dtitle" style="font-size:12.5px">Pagamento</h3>
+          <div class="price-line"><span>4 diárias × R$ 150</span><span>R$ 600,00</span></div>
+          <div class="price-line"><span>Status</span><span>Pix aprovado</span></div>
+          <div class="price-line"><span>Comissão (15%)</span><span>R$ 90,00</span></div>
+          <div class="price-line price-line--total"><span>Repasse</span><strong>R$ 510,00</strong></div>
+        </div>
+
+        <div class="notice notice--info">
+          <i class="bi bi-info-circle"></i>
+          <div>
+            <strong>Check-out liberado</strong>
+            <span>A devolução pode ser registrada a partir de 16 nov, 18:00.</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RF21–RF23 · RN10</span>
+  </footer>
+</body>
+</html>

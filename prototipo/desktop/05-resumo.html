@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Resumo da reserva (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a href="07-reservas.html">Reservas</a>
+        <a href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-search"></i> Buscar por cidade ou modelo</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">MS</span>
+          <span><strong>Marina</strong><small>Locatária e proprietária</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="04-detalhes.html"><i class="bi bi-chevron-left"></i> Voltar aos detalhes</a>
+        <h1>Resumo da reserva</h1>
+        <p>Confira o período e os valores antes de seguir para o pagamento simulado.</p>
+      </div>
+      <span class="badge-status is-info">Etapa 1 de 2</span>
+    </div>
+
+    <div class="dcols">
+      <div class="dstack">
+        <div class="card dpad">
+          <div class="res-card" style="padding:0">
+            <div class="photo photo--a res-card__img"></div>
+            <div class="res-card__body">
+              <strong>Fiat Argo 2021</strong>
+              <span class="muted-sm">Hatch · Manual · Flex · 5 lugares</span>
+              <span class="loc"><i class="bi bi-geo-alt"></i> Vila Madalena, São Paulo</span>
+              <div class="row-between" style="margin-top:8px">
+                <span class="rating"><i class="bi bi-star-fill"></i> 4,8</span>
+                <span class="price">R$ 150<small>/dia</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad">
+          <h3 class="dtitle">Período</h3>
+          <div class="dgrid dgrid--3">
+            <div>
+              <small class="muted-xs">Retirada</small>
+              <strong style="display:block;font-size:16px;margin-top:2px">12 nov · 09:00</strong>
+              <span class="muted-sm">Vila Madalena, São Paulo</span>
+            </div>
+            <div>
+              <small class="muted-xs">Devolução</small>
+              <strong style="display:block;font-size:16px;margin-top:2px">16 nov · 18:00</strong>
+              <span class="muted-sm">Mesmo local da retirada</span>
+            </div>
+            <div>
+              <small class="muted-xs">Duração</small>
+              <strong style="display:block;font-size:16px;margin-top:2px">4 diárias</strong>
+              <span class="muted-sm">Cobrança por dia iniciado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad">
+          <h3 class="dtitle">Política de cancelamento</h3>
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Até 48 h antes da retirada</strong>
+              <span>Cancelamento grátis, com estorno integral.</span>
+            </div>
+            <span class="badge-status is-ok">100%</span>
+          </div>
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Menos de 48 h antes</strong>
+              <span>Reembolso parcial de 50% do valor das diárias.</span>
+            </div>
+            <span class="badge-status is-pending">50%</span>
+          </div>
+          <div class="admin-row">
+            <div class="admin-row__main">
+              <strong>Após a retirada</strong>
+              <span>Sem reembolso; a locação segue até a devolução.</span>
+            </div>
+            <span class="badge-status is-danger">0%</span>
+          </div>
+        </div>
+
+        <div class="notice notice--info">
+          <i class="bi bi-info-circle"></i>
+          <div>
+            <strong>Solicitação sujeita a aprovação</strong>
+            <span>O proprietário tem até 24 h para aceitar. Se recusar, o pagamento é estornado automaticamente.</span>
+          </div>
+        </div>
+
+        <div class="notice notice--brand">
+          <i class="bi bi-shield-check"></i>
+          <div>
+            <strong>Pagamento simulado</strong>
+            <span>Nenhum valor real será cobrado. O fluxo serve para validar a experiência e as regras do projeto.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="dstack dsticky">
+        <div class="card dsummary">
+          <h3 class="dtitle">Valores</h3>
+          <div class="price-line"><span>4 diárias × R$ 150</span><strong>R$ 600,00</strong></div>
+          <div class="price-line"><span>Taxa de serviço</span><strong>R$ 0,00</strong></div>
+          <div class="price-line"><span>Seguro simulado</span><strong>Incluído</strong></div>
+          <div class="price-line price-line--total"><span>Total</span><strong>R$ 600,00</strong></div>
+
+          <p class="muted-xs" style="margin:10px 0 0">
+            Comissão da plataforma de 15% (R$ 90,00) já incluída. Repasse ao proprietário: R$ 510,00.
+          </p>
+
+          <a class="btn-brand" href="06-pagamento.html" style="margin-top:16px">Ir para pagamento</a>
+          <a class="btn-ghost" href="04-detalhes.html" style="margin-top:8px">Voltar aos detalhes</a>
+        </div>
+
+        <div class="card dpad-sm">
+          <div class="owner">
+            <div class="avatar avatar--lg">RC</div>
+            <div class="owner__info">
+              <strong>Rafael Costa</strong>
+              <span><i class="bi bi-patch-check-fill"></i> Verificado · responde em 1 h</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RN07 · 4 × R$ 150 = R$ 600 · comissão R$ 90 · repasse R$ 510</span>
+  </footer>
+</body>
+</html>

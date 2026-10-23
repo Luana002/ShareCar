@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Recuperar senha (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <main style="min-height:100vh;display:grid;place-items:center;padding:48px 24px">
+    <div style="width:100%;max-width:520px" class="dstack">
+      <div style="text-align:center">
+        <span class="brand-mark" style="margin:0 auto 16px"><i class="bi bi-key"></i></span>
+        <h1 style="margin:0;font-size:26px;letter-spacing:-0.03em">Recuperar senha</h1>
+        <p class="dmuted" style="margin:8px 0 0">Informe o e-mail da sua conta. Enviaremos um link para você criar uma nova senha (RF02).</p>
+      </div>
+
+      <div class="card dpad">
+        <div class="field">
+          <label for="email">E-mail cadastrado</label>
+          <div class="input">
+            <i class="bi bi-envelope"></i>
+            <input id="email" type="email" placeholder="voce@email.com" value="marina@email.com">
+          </div>
+        </div>
+
+        <a class="btn-brand" href="#" style="margin-top:14px"><i class="bi bi-send"></i> Enviar link de recuperação</a>
+        <a class="btn-ghost" href="01-entrar.html" style="margin-top:8px">Voltar para entrar</a>
+
+        <p class="muted-xs" style="text-align:center;margin:14px 0 0">
+          <i class="bi bi-shield-lock"></i> Por segurança, não informamos se o e-mail existe na base.
+        </p>
+      </div>
+
+      <div class="notice notice--brand">
+        <i class="bi bi-envelope-check"></i>
+        <div>
+          <strong>Link enviado</strong>
+          <span>Se o e-mail existir, o link chega em alguns minutos. Ele expira em 30 minutos e só pode ser usado uma vez.</span>
+        </div>
+      </div>
+
+      <div class="card dpad-sm">
+        <div class="dgrid dgrid--2">
+          <div>
+            <strong style="display:block;font-size:12.5px">Não recebeu?</strong>
+            <span class="muted-sm">Confira a caixa de spam ou aguarde 2 minutos antes de pedir outro link.</span>
+          </div>
+          <div>
+            <strong style="display:block;font-size:12.5px">Sua conta continua segura</strong>
+            <span class="muted-sm">Pedir um novo link não altera a senha atual nem encerra suas sessões.</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted-xs" style="text-align:center;margin:0">
+        <a class="link" href="../index.html">Voltar à galeria do protótipo</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

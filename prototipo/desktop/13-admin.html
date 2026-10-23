@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareCar · Administração (desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+<body class="desk">
+  <header class="dtop">
+    <div class="dtop__inner">
+      <a class="dbrand" href="02-home.html">
+        <span class="brand-mark"><i class="bi bi-car-front-fill"></i></span> ShareCar
+      </a>
+      <nav class="dnav">
+        <a href="02-home.html">Início</a>
+        <a href="03-resultados.html">Buscar</a>
+        <a href="07-reservas.html">Reservas</a>
+        <a href="12-painel.html">Painel</a>
+      </nav>
+      <div class="dsearch"><i class="bi bi-shield-lock"></i> Área administrativa</div>
+      <div class="duser">
+        <button class="icon-btn" type="button" aria-label="Notificações"><i class="bi bi-bell"></i></button>
+        <a class="dwho" href="11-perfil.html">
+          <span class="avatar">AD</span>
+          <span><strong>Admin</strong><small>Perfil administrador</small></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dmain">
+    <div class="dpage-head">
+      <div>
+        <a class="dback" href="11-perfil.html"><i class="bi bi-chevron-left"></i> Voltar ao perfil</a>
+        <h1>Administração</h1>
+        <p>Aprovações, comissão da plataforma, reservas e bloqueios de conta.</p>
+      </div>
+      <div class="dactions">
+        <span class="badge-status is-pending">4 pendências</span>
+      </div>
+    </div>
+
+    <div class="dgrid dgrid--4" style="margin-bottom:18px">
+      <div class="dstat">
+        <small>Aprovações</small>
+        <strong>4</strong>
+        <span>aguardando análise</span>
+      </div>
+      <div class="dstat">
+        <small>Veículos</small>
+        <strong>2</strong>
+        <span>em análise</span>
+      </div>
+      <div class="dstat dstat--brand">
+        <small>Comissão</small>
+        <strong>15%</strong>
+        <span>sobre as diárias</span>
+      </div>
+      <div class="dstat">
+        <small>Usuários</small>
+        <strong>128</strong>
+        <span>3 bloqueados</span>
+      </div>
+    </div>
+
+    <div class="dcols dcols--wide">
+      <aside class="dstack">
+        <div class="card dside">
+          <h3>Administração</h3>
+          <nav class="dside__nav">
+            <a class="is-active" href="13-admin.html"><i class="bi bi-inbox"></i><span>Aprovações</span></a>
+            <a href="#comissao"><i class="bi bi-percent"></i><span>Comissão</span></a>
+            <a href="#reservas"><i class="bi bi-journal-text"></i><span>Reservas e pagamentos</span></a>
+            <a href="#bloqueios"><i class="bi bi-slash-circle"></i><span>Bloqueios</span></a>
+            <a href="11-perfil.html"><i class="bi bi-person"></i><span>Voltar ao perfil</span></a>
+          </nav>
+        </div>
+
+        <div class="notice notice--info">
+          <i class="bi bi-shield-lock"></i>
+          <div>
+            <strong>Área restrita</strong>
+            <span>Documentos e CNH só podem ser vistos pelo dono e pelo administrador (RNF05).</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="dstack">
+        <div class="card dpad">
+          <div class="dtitle--row" style="margin-bottom:6px">
+            <h3 class="dtitle" style="margin:0">Aprovações pendentes</h3>
+            <span class="badge-status is-pending">4 itens</span>
+          </div>
+
+          <table class="dtable">
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Solicitante</th>
+                <th>Enviado em</th>
+                <th>Detalhe</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge-status is-info">Documento</span></td>
+                <td><strong>Carla Dias</strong></td>
+                <td>18 out · 11:20</td>
+                <td>RG frente e verso · primeira locação</td>
+                <td>
+                  <div class="admin-actions">
+                    <button class="btn-ghost btn-sm" type="button">Recusar</button>
+                    <button class="btn-brand btn-sm" type="button">Aprovar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="badge-status is-info">CNH</span></td>
+                <td><strong>Pedro Alves</strong></td>
+                <td>19 out · 09:05</td>
+                <td>Validade 03/2028 · categoria B</td>
+                <td>
+                  <div class="admin-actions">
+                    <button class="btn-ghost btn-sm" type="button">Recusar</button>
+                    <button class="btn-brand btn-sm" type="button">Aprovar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="badge-status is-pending">Veículo</span></td>
+                <td><strong>Marina Souza</strong></td>
+                <td>20 out · 15:42</td>
+                <td>Chevrolet Onix 2023 · 4 fotos · R$ 139/dia</td>
+                <td>
+                  <div class="admin-actions">
+                    <button class="btn-ghost btn-sm" type="button">Recusar</button>
+                    <button class="btn-brand btn-sm" type="button">Aprovar</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="badge-status is-pending">Veículo</span></td>
+                <td><strong>João Lima</strong></td>
+                <td>21 out · 08:31</td>
+                <td>Renault Kwid 2022 · 3 fotos · R$ 98/dia</td>
+                <td>
+                  <div class="admin-actions">
+                    <button class="btn-ghost btn-sm" type="button">Recusar</button>
+                    <button class="btn-brand btn-sm" type="button">Aprovar</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dgrid dgrid--2" id="comissao">
+          <div class="card dpad">
+            <h3 class="dtitle">Comissão da plataforma</h3>
+            <div class="field" style="margin-bottom:12px">
+              <label for="comissao">Percentual sobre as diárias</label>
+              <div class="input">
+                <i class="bi bi-percent"></i>
+                <input id="comissao" type="text" value="15">
+                <span class="suffix">%</span>
+              </div>
+            </div>
+            <div class="price-line"><span>4 diárias × R$ 150</span><span>R$ 600,00</span></div>
+            <div class="price-line"><span>Comissão (15%)</span><span>R$ 90,00</span></div>
+            <div class="price-line price-line--total"><span>Repasse ao proprietário</span><strong>R$ 510,00</strong></div>
+            <p class="hint" style="margin-top:12px">
+              <i class="bi bi-info-circle"></i> O padrão é 15% e a alteração vale para as novas reservas (RN06, RN07).
+            </p>
+            <button class="btn-ghost" type="button" style="margin-top:4px">
+              <i class="bi bi-check2"></i> Salvar percentual
+            </button>
+          </div>
+
+          <div class="card dpad">
+            <h3 class="dtitle">Indicadores gerais</h3>
+            <div class="stat-grid" style="gap:12px">
+              <div class="stat">
+                <small>Reservas no mês</small>
+                <strong>42</strong>
+                <span>R$ 18.940 em diárias</span>
+              </div>
+              <div class="stat">
+                <small>Comissão retida</small>
+                <strong>R$ 2.841</strong>
+                <span>15% do total</span>
+              </div>
+              <div class="stat">
+                <small>Repasses pagos</small>
+                <strong>R$ 16.099</strong>
+                <span>aos proprietários</span>
+              </div>
+              <div class="stat">
+                <small>Estornos</small>
+                <strong>2</strong>
+                <span>R$ 1.880 devolvidos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card dpad" id="reservas">
+          <div class="dtitle--row" style="margin-bottom:10px">
+            <h3 class="dtitle" style="margin:0">Reservas e pagamentos</h3>
+            <div class="chip-row">
+              <span class="chip is-active">Todas</span>
+              <span class="chip">Pagas</span>
+              <span class="chip">Estornadas</span>
+              <span class="chip">Recusadas</span>
+            </div>
+          </div>
+
+          <table class="dtable">
+            <thead>
+              <tr>
+                <th>Reserva</th>
+                <th>Partes</th>
+                <th>Período</th>
+                <th class="num">Valor</th>
+                <th class="num">Comissão</th>
+                <th class="num">Repasse</th>
+                <th>Pagamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>#1042</strong></td>
+                <td>Marina → Rafael</td>
+                <td>12–16 nov</td>
+                <td class="num">R$ 600,00</td>
+                <td class="num">R$ 90,00</td>
+                <td class="num">R$ 510,00</td>
+                <td><span class="badge-status is-ok">Pix aprovado</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1039</strong></td>
+                <td>Pedro → Marina</td>
+                <td>10–14 nov</td>
+                <td class="num">R$ 960,00</td>
+                <td class="num">R$ 144,00</td>
+                <td class="num">R$ 816,00</td>
+                <td><span class="badge-status is-ok">Cartão aprovado</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1035</strong></td>
+                <td>Ana → Marina</td>
+                <td>01–05 nov</td>
+                <td class="num">R$ 1.280,00</td>
+                <td class="num">R$ 192,00</td>
+                <td class="num">R$ 1.088,00</td>
+                <td><span class="badge-status is-danger">Estornado</span></td>
+              </tr>
+              <tr>
+                <td><strong>#1033</strong></td>
+                <td>João → Marina</td>
+                <td>18–21 nov</td>
+                <td class="num">R$ 387,00</td>
+                <td class="num">R$ 58,05</td>
+                <td class="num">R$ 328,95</td>
+                <td><span class="badge-status is-done">Recusado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card dpad" id="bloqueios">
+          <div class="dtitle--row" style="margin-bottom:6px">
+            <h3 class="dtitle" style="margin:0">Contas bloqueadas</h3>
+            <span class="badge-status is-danger">3</span>
+          </div>
+          <table class="dtable">
+            <thead>
+              <tr>
+                <th>Usuário</th>
+                <th>Motivo</th>
+                <th>Bloqueado em</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bruno Tavares</strong></td>
+                <td>Inadimplência</td>
+                <td>09 out · 16:18</td>
+                <td><button class="btn-ghost btn-sm" type="button">Desbloquear</button></td>
+              </tr>
+              <tr>
+                <td><strong>Renata Alves</strong></td>
+                <td>Documento recusado 3 vezes</td>
+                <td>02 out · 10:04</td>
+                <td><button class="btn-ghost btn-sm" type="button">Desbloquear</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="muted-xs" style="margin:12px 0 0">Contas bloqueadas não podem reservar nem anunciar (RF27).</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="dfoot">
+    <span>ShareCar · protótipo visual desktop · dados fictícios</span>
+    <span>RF26–RF29 · RN06, RN07 · RNF05</span>
+  </footer>
+</body>
+</html>
