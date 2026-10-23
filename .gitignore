@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────
+# ShareCar — arquivos que NÃO vão para o Git
+# ─────────────────────────────────────────────
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+/media/
+/staticfiles/
+
+# Variáveis de ambiente (segredos)
+.env
+.env.*
+!.env.example
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Ferramentas
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Docker / dados locais do banco
+/dados-postgres/
+*.sql.gz
+
+# Temporários
+*.tmp
+*.bak
