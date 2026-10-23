@@ -34,6 +34,7 @@ Projeto acadêmico em dupla: **ShareCar**, um marketplace **peer-to-peer de alug
 | Protótipo visual em HTML/CSS das 10 telas | ✅ `prototipo/` |
 | Validação de renderização (Chrome headless) | ✅ |
 | Repositório Git inicializado + `.gitignore` (commit `e2d6fee`) | ✅ 21/10/2026 |
+| Remoto no GitHub `Luana002/ShareCar` (público, branch `main`) | ✅ 21/10/2026 |
 | README raiz | ❌ ainda não iniciado |
 | Projeto Django / PostgreSQL / API | ❌ ainda não iniciado |
 
@@ -87,12 +88,14 @@ Desvios: `recusada` (gera estorno), `cancelada`, `estornada`.
 
 ### 3.6 Versionamento (definido em 21/10/2026)
 
-- Repositório inicializado na própria pasta `C:\Users\00022593\projeto`, branch `master`.
+- Repositório inicializado na própria pasta `C:\Users\00022593\projeto`, branch **`main`**.
 - Identidade Git configurada **apenas no repositório** (não na máquina): `Luana002 / correaluana623@gmail.com`.
 - `core.autocrlf=true`: o histórico guarda **LF** e a pasta de trabalho recebe **CRLF** no Windows. Por isso **não** há `.gitattributes` de normalização.
 - `.gitignore` cobre Python/Django, `.env` (com exceção de `.env.example`), mídia, `staticfiles`, caches de teste, editores e arquivos de SO.
 - Arquivos versionados no primeiro commit: `AGENTS.md`, `projeto-sharecar.md`, `10-telas-mvp.md`, `.gitignore` e todo o `prototipo/`.
-- Ainda **sem** repositório remoto no GitHub; `README.md` raiz ficou para o próximo passo.
+- Remoto `origin`: **https://github.com/Luana002/ShareCar.git** (público), com `main` rastreando `origin/main`.
+- O remoto foi criado **vazio** (sem README gerado pelo GitHub), então o primeiro push não exigiu `pull --rebase`.
+- O `README.md` raiz continua pendente: é o próximo item do Marco 1.
 
 ---
 
@@ -184,7 +187,7 @@ Requisitos não funcionais críticos: PWA instalável + offline (RNF01–02), pr
 4. Modelagem de usuários/perfis (usuário pode ser proprietário e locatário).
 5. Implementar veículos e disponibilidade; depois busca, reservas e pagamento.
 6. Testes das regras RN01–RN10 desde o início.
-7. Criar repositório remoto no GitHub e fazer o `git push`.
+7. Manter `origin/main` atualizado (`git push`) ao fim de cada marco.
 
 ---
 
